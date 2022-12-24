@@ -2,7 +2,7 @@ import requests
 import time
 
 def price():
-    url = f"https://api.twelvedata.com/price?symbol=BTC/USD&apikey=43620a19078c459ea22098c6bddae06d"
+    url = f"https://api.twelvedata.com/price?symbol=BTC/USD&apikey=API_KEY"
     response = requests.get(url).json()
     response = response['price']
     print(response)
